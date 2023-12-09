@@ -1,0 +1,243 @@
+/*header css*/
+header .intro {
+    background-image: url(img/1564243.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    height: 90vh;
+}
+
+.title-desc {
+    padding-top: 15%;
+}
+header .intro .head h1 {
+    font-size: 70px;
+    font-family: 'Belanosima';
+    color: #0a0604;
+}
+
+header .intro .head h6 {
+    font-size: 22px;
+    color: #F19F5A;
+    letter-spacing: 0.2rem;
+}
+
+header .intro .head p {
+    color: #0a0604;
+}
+
+header .intro .head hr {
+    border-radius: 2px;
+    opacity: 100%;
+    color: #F19F5A;
+
+}
+
+/*navbar css*/
+.navbar {
+    font-family: 'Poppins';
+    z-index: 3;
+}
+
+* {
+    z-index: 2;
+}
+
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 10px;
+    transition: width 0.3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 60%;
+    height: 10px;
+    transition: width 0.3s;
+    border-bottom: 2px solid #F19F5A;
+}
+
+.nav-link.active {
+    font-weight: 400;
+}
+
+.button-primary {
+    width: 133px;
+    height: 70px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button-secondary {
+    background-color: white;
+    color: var(--pr-color);
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 3px 4px 3px 4px;
+}
+
+.featured .row .one {
+    height: 300px;
+}
+
+.featured .row .one img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.featured .row .one .text {
+    font-family: 'poppins';
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.featured .row .one .text p {
+    letter-spacing: 0.2rem;
+    line-height: 1px;
+}
+
+.featured .row .one .text a {
+    text-decoration: none;
+    border-style: none;
+    color: #F19F5A;
+    font-size: 0.9rem;
+}
+
+.featured .row .one .text a::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 2px;
+    border-bottom: 2px solid #F19F5A;
+}
+
+.subscription {
+    font-family: 'poppins';
+    background: #f5aa6d;
+}
+
+.subscription .row .sub input {
+    outline: none;
+    border: 1px solid #f5aa6d;
+}
+
+.subscription .row .sub input::placeholder {
+    font-size: 0.9rem;
+}
+
+.subscription .row .sub button {
+    background-color: #af7342;
+    color: wheat;
+    border: 1px solid #af7342;
+}
+
+.row .post {
+    font-family: 'poppins';
+    background-color: aqua;
+}
+
+.blog .row .post a {
+    font-family: 'poppins';
+    font-size: 0.9rem;
+    color: #F19F5A;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: none;
+}
+
+.blog .row .sidebar .side1 h6 {
+    font-family: 'poppins';
+    font-weight: bold;
+    color: #F19F5A;
+    text-decoration: none;
+}
+
+.blog .row .sidebar .side2 .row .sidetext h4 {
+    font-size: 1rem;
+}
+
+.blog .row .sidebar .side2 .row .sidetext a {
+    font-size: 0.9rem;
+    color: #F19F5A;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: none;
+}
+
+hr {
+    border-width: 3px;
+    color: #F19F5A;
+}
+
+.sidebar {
+    font-family: 'poppins';
+}
+
+.blog .side3 .one {
+    height: 300px;
+    position: relative;
+}
+
+.blog .side3 .one img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.blog .side3 .one .text {
+    font-family: 'poppins';
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10rem 1.1rem 0 1.1rem;
+}
+
+.blog .side3 .one button {
+    background-color: #af7342;
+    color: wheat;
+    border: 1px solid #af7342;
+}
+
+.page{
+    padding-top: 200px;
+}
+
+@media only screen and (max-width: 800px) {
+    .title-desc {
+            padding-top: 25%;
+        }
+}
+@media only screen and (max-width: 600px) {
+    .title-desc {
+            padding-top: 35%;
+        }
+}
+@media only screen and (max-width: 300px) {
+    .title-desc {
+            padding-top: 50%;
+        }
+}
+
